@@ -9,22 +9,21 @@
 </head>
 
 <body>
-    <a-scene arjs embedded>
-        <!-- 文字 -->
-        <!-- <a-text value="Bilibili" color="pink" rotation="-90 0 0"></a-text> -->
 
-        <!-- 图片 -->
-        <!-- <a-image src="../assets/images/arknights.png" rotation="-90 0 0"></a-image> -->
+<a-scene embedded arjs="sourceType: webcam; debugUIEnabled: true;">
 
-        <!-- 模型 -->
-        <a-entity gltf-model="../assets/models/cartoon-gltf/scene.gltf" position="0 1 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 3000">
-        </a-entity>
+  <a-marker preset="hiro">
+    <a-box
+      position="0 0.5 0"
+      scale="1 1 1"
+      material="color: red;">
+    </a-box>
+  </a-marker>
 
-        <a-marker-camera preset='hiro'></a-marker-camera>
+  <a-entity camera></a-entity>
 
-        <!-- 自定义生成的marker -->
-        <!-- <a-marker-camera type="pattern" url="../assets/patterns/bilibili.patt"></a-marker-camera> -->
-    </a-scene>
+</a-scene>
+
 </body>
 
 </html>
