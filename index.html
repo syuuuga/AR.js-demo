@@ -13,11 +13,12 @@
 <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: true;">
 
   <a-marker preset="hiro">
-    <a-box
-      position="0 0.5 0"
-      scale="1 1 1"
-      material="color: red;">
-    </a-box>
+  <a-entity
+    gltf-model="assets/models/cheese.glb"
+    scale="0.2 0.2 0.2"
+    position="0 0 0"
+    rotation="0 0 0">
+  </a-entity>
   </a-marker>
 
   <a-entity camera></a-entity>
